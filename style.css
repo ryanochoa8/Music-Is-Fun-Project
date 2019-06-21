@@ -1,0 +1,9 @@
+#songs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#intro {
+  height: 100vh;
+  background-color: rgba(255, 196, 0, 0.31);
+}
