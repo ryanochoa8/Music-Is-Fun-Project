@@ -15,6 +15,7 @@ function drawSongs() {
   songsElem.innerHTML = template
   console.log(itunesService.Songs)
   //TODO use event listeners to pause 
+  // FIXME document.getElementById("#songs").addEventListener("click", drawSongs)
 }
 
 
