@@ -11,7 +11,7 @@ export default class Song {
 
     get Template() {
         return `
-        <div class="col-4 text-center>
+        <div class="col-4 text-center border border-light py-2>
             <div class="card bg-light my-3>
             <img src="${this.albumArt}" class="card-img-top pt-1 rounded" alt="album artwork">
                 <ul class="list-group list-group-flush">

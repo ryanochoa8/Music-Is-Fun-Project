@@ -1,6 +1,7 @@
 #songs {
   display: flex;
   flex-wrap: wrap;
+  background-color: black;
 }
 
 #intro {
