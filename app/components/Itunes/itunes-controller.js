@@ -3,7 +3,7 @@ import ItunesService from "./itunes-service.js";
 let itunesService = new ItunesService()
 
 function drawSongs() {
-  //changes button back to GET MUSIC once songs are loaded
+  //NOTE changes button back to GET MUSIC once songs are loaded
   document.querySelector('#get-music-button').textContent = 'GET MUSIC'
 
   let songsElem = document.querySelector("#songs")
@@ -14,7 +14,7 @@ function drawSongs() {
   })
   songsElem.innerHTML = template
   console.log(itunesService.Songs)
-
+  //TODO use event listeners to pause 
 }
 
 
@@ -24,9 +24,8 @@ class ItunesController {
   constructor() {
     itunesService.addSubscriber("songs", drawSongs)
     drawSongs()
-    //BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
+    //TODO BE SURE TO REGISTER YOUR SUBSCRIBERS!!!!!!!
   }
-
 
   //DO NOT MODIFY THIS METHOD
   getMusic(e) {
